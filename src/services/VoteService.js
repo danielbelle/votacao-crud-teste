@@ -56,7 +56,7 @@ module.exports = {
 
             db.query('DELETE FROM enquetes WHERE codigo =?', [codigo], (error,results)=>{
                 if(error) { rejeitado(error); return; }
-                aceito(results);
+                aceito(results); 
             });
         });
     }
