@@ -7,15 +7,15 @@ const VoteController = require('./controllers/VoteController');
 router.get('/enquetes', VoteController.buscarTodos);
 
 //READ rota para pegar um
-router.get('/enquetes/:codigo', VoteController.buscarUm);
+router.get('/enquete/:codigo', VoteController.buscarUm);
 
 // CREATE rota para criar um
-// router.post('/enquetes', VoteController.inserir);
+router.post('/enquete', VoteController.inserir);
 
 // UPDATE rota para fazer update em dado
-// router.put('/enquetes/:codigo', VoteController.alterar);
+router.put('/enquete/:codigo', VoteController.alterar);
 
 // DELETE rota para deletar um dado
-// router.delete('/enquetes/:codigo', VoteController.excluir);
+router.delete('/enquete/:codigo', VoteController.excluir);
 
 module.exports = router;
